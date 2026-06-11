@@ -4687,3 +4687,8 @@ input, select, textarea {
 		}
 
 	}
+/* Remove decorative side-lines on the featured date */
+header.major > .date:before,
+header.major > .date:after {
+	display: none;
+}
