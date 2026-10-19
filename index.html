@@ -21,13 +21,20 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Anish<br />
-						Kulkarni</h1>
-						<p>Aerospace engineering student at Georgia Tech working on lunar navigation simulation,<br />
-						cryogenic test operations, and model-based systems engineering.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
+						<div class="intro-panel">
+							<p class="intro-eyebrow">GEORGIA TECH &bull; AEROSPACE ENGINEERING</p>
+							<h1>Anish<br />Kulkarni</h1>
+							<p class="intro-summary">NASA lunar navigation simulation, experimental propulsion testing, and model-based systems engineering.</p>
+							<div class="intro-highlights" aria-label="Career highlights">
+								<span>NASA Marshall &bull; HLS</span>
+								<span>Georgia Tech ASDL</span>
+								<span>NASA L'SPACE &bull; $10K Award</span>
+							</div>
+							<div class="intro-cta">
+								<a class="button primary icon solid fa-arrow-down scrolly" href="#experience">Explore Experience</a>
+								<a class="button icon solid fa-download" href="docs/Anish_Kulkarni_Resume.pdf" download>Download Resume</a>
+							</div>
+						</div>
 					</div>
 
 				<!-- Header -->
@@ -53,22 +60,25 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">Georgia Tech &bull; B.S. Aerospace Engineering &bull; December 2026</span>
-									<h2><a href="#experience" class="scrolly">Lunar navigation, propulsion,<br />
-									and systems engineering</a></h2>
-									<p>I'm an aerospace engineering student at Georgia Tech (GPA 3.38; HOPE Scholarship; Dean's List)
-									with experience in NASA Human Landing System lunar navigation simulation, cryogenic rocket-engine test operations,
-									and model-based systems engineering. My coursework includes control systems, jet and rocket propulsion,
-									spacecraft flight dynamics, and spacecraft operations.<br /><br />
-									Core tools: Python, MATLAB, SolidWorks, Siemens NX, SysML / Cameo, OpenRocket, and GitHub.</p>
-								</header>
-								<a href="#experience" class="image main scrolly"><img src="images/Gradpic.jpg" alt="Anish Kulkarni on the Georgia Tech campus" /></a>
-								<ul class="actions special">
-									<li><a href="https://www.linkedin.com/in/anish-kulkarni-8ab1131a7/" class="button large">Connect on LinkedIn</a></li>
-								</ul>
-							</article>
+								<article class="post featured portfolio-about">
+									<header class="major">
+										<span class="date">Georgia Tech &bull; B.S. Aerospace Engineering &bull; December 2026</span>
+										<h2>Engineering for exploration</h2>
+										<p>I'm an aerospace engineering student at Georgia Tech (GPA 3.38; HOPE Scholarship; Dean's List). My experience spans NASA Human Landing System lunar navigation simulation, cryogenic test operations, and systems engineering research. I enjoy connecting simulation, software, and physical systems to solve aerospace problems.</p>
+										<p>My recent work includes a SysML-based Europa mission communications model at the Aerospace Systems Design Laboratory and an award-winning NASA L'SPACE proposal selected for $10,000 in continuation funding.</p>
+									</header>
+									<a href="#experience" class="image main profile-photo scrolly" aria-label="Go to experience"><img src="images/Gradpic.jpg" alt="Anish Kulkarni at Georgia Tech" /></a>
+									<div class="core-tools">
+										<h3>Core Tools</h3>
+										<ul class="tool-chips" aria-label="Core technical tools and software">
+											<li>Python</li><li>MATLAB / Simulink</li><li>Unreal Engine</li><li>MagicDraw / SysML</li><li>ParaMagic</li><li>Siemens NX</li><li>SolidWorks</li><li>Linux</li><li>GitHub</li>
+										</ul>
+									</div>
+									<div class="portfolio-link-row">
+										<a href="docs/Anish_Kulkarni_Resume.pdf" class="button primary icon solid fa-download" download>Download Resume (PDF)</a>
+										<a href="https://www.linkedin.com/in/anish-kulkarni-8ab1131a7/" class="button icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+									</div>
+								</article>
 
 						<!-- Experience cards: add new entries inside the section below. -->
 						<section class="posts" id="experience" aria-label="Professional and research experience">
@@ -88,35 +98,51 @@
 									<p class="nasa-topics-intro">Explore my current technical focus areas:</p>
 									<div class="nasa-topics">
 										<details class="nasa-topic">
-											<summary>Simulation Integration</summary>
+											<summary><span class="topic-icon" aria-hidden="true">⚙</span><span>Simulation Integration</span></summary>
 											<div class="nasa-topic-content">
 												<p>Integrating Unreal Engine imagery with a six-degree-of-freedom (6-DoF) guidance, navigation, and control simulation. This work involves co-simulation, debugging, image-quality checks, and verification of simulation behavior.</p>
 											</div>
 										</details>
 
 										<details class="nasa-topic">
-											<summary>Lunar Terrain &amp; Lighting</summary>
+											<summary><span class="topic-icon" aria-hidden="true">◈</span><span>Lunar Terrain &amp; Lighting</span></summary>
 											<div class="nasa-topic-content">
 												<p>Working with lunar digital elevation models (DEMs) and albedo data to improve simulated terrain and surface reflectance. Key skills include terrain visualization, material and lighting workflows, and validation of rendered scenes.</p>
 											</div>
 										</details>
 
-										<details class="nasa-topic">
-											<summary>Camera &amp; Image Modeling</summary>
-											<div class="nasa-topic-content">
-												<p>Developing higher-fidelity synthetic camera imagery by accounting for general optical effects such as lens distortion. My focus includes camera modeling, image verification, and identifying differences between idealized and more realistic imagery.</p>
-											</div>
-										</details>
+											<details class="nasa-topic nasa-topic--wide">
+												<summary><span class="topic-icon" aria-hidden="true">◎</span><span>Camera &amp; Image Modeling</span></summary>
+												<div class="nasa-topic-content">
+													<p>Exploring the <strong>Brown&ndash;Conrady camera distortion model</strong> to represent departures from an ideal pinhole camera. The radial terms <strong>k<sub>1</sub></strong> and <strong>k<sub>2</sub></strong> describe how image points shift with distance from the optical center, helping assess the realism of simulated images.</p>
+													<div class="camera-equation" aria-label="Simplified Brown-Conrady radial distortion equations">
+														<span>r<sup>2</sup> = x<sup>2</sup> + y<sup>2</sup></span>
+														<span>x<sub>d</sub> = x (1 + k<sub>1</sub>r<sup>2</sup> + k<sub>2</sub>r<sup>4</sup>)</span>
+														<span>y<sub>d</sub> = y (1 + k<sub>1</sub>r<sup>2</sup> + k<sub>2</sub>r<sup>4</sup>)</span>
+													</div>
+													<p class="model-note">Here x and y are normalized, undistorted image coordinates. This is the radial-only form; the full Brown&ndash;Conrady model can also include tangential distortion coefficients.</p>
+													<div class="camera-figures">
+														<figure>
+															<img src="images/camera-distortion-comparison.webp" alt="Checkerboard examples showing undistorted, barrel-distorted and pincushion-distorted grids" loading="lazy" />
+															<figcaption>Ideal grid vs. radial distortion</figcaption>
+														</figure>
+														<figure>
+															<img src="images/camera-model-unreal.webp" alt="Camera model visualized in an Unreal Engine viewport" loading="lazy" />
+															<figcaption>Camera-model visualization</figcaption>
+														</figure>
+													</div>
+												</div>
+											</details>
 
 										<details class="nasa-topic">
-											<summary>Simulation &amp; Monte Carlo Testing</summary>
+											<summary><span class="topic-icon" aria-hidden="true">▦</span><span>Simulation &amp; Monte Carlo Testing</span></summary>
 											<div class="nasa-topic-content">
 												<p>Supporting Linux-based and parallel simulation workflows to make navigation testing more scalable and repeatable. This involves cross-platform development, troubleshooting, and Monte Carlo simulation concepts for evaluating system behavior.</p>
 											</div>
 										</details>
 
 										<details class="nasa-topic nasa-topic--skills">
-											<summary>Tools &amp; Skills</summary>
+											<summary><span class="topic-icon" aria-hidden="true">✦</span><span>Tools &amp; Skills</span></summary>
 											<div class="nasa-topic-content">
 												<ul class="nasa-skill-list">
 													<li>Unreal Engine</li>
@@ -133,18 +159,24 @@
 									</div>
 								</article>
 
-								<!-- Georgia Tech ASDL -->
-								<article>
-									<header>
-										<span class="date">May 2026 - August 2026</span>
-										<h2>Undergraduate Research Assistant<br />
-										ASDL, MBSE Branch</h2>
-									</header>
-									<div class="experience-media experience-media--logo experience-media--asdl">
-										<img src="images/asdl-logo.png" alt="Aerospace Systems Design Laboratory ASDL logo" loading="lazy" decoding="async" />
-									</div>
-									<p>Developed SysML models in Cameo to define system structure, behavior, and requirements as part of the Aerospace Systems Design Laboratory's model-based systems engineering work. Integrated the Siemens NX parametric tool to support cross-domain trade studies.</p>
-								</article>
+									<!-- Georgia Tech ASDL -->
+									<article>
+										<header>
+											<span class="date">May 2026 - August 2026</span>
+											<h2>Undergraduate Research Assistant<br />ASDL, MBSE Branch</h2>
+										</header>
+										<div class="experience-media experience-media--logo experience-media--asdl">
+											<img src="images/asdl-logo.png" alt="Aerospace Systems Design Laboratory ASDL logo" loading="lazy" decoding="async" />
+										</div>
+										<p><strong>Europa Submarine Model &mdash; Team M102.</strong> As part of a conceptual mission inspired by Europa Clipper and SWIM, our team modeled six spacecraft and submarine subsystems in <strong>MagicDraw using SysML</strong>. I developed the <strong>communications subsystem</strong> to study whether science data could be transmitted from Europa to Earth while accounting for radio power consumption.</p>
+										<p>Built block definition and parametric diagrams, linked six governing constraints covering antenna gain, free-space path loss, received power, link quality, link margin, and communications power draw, and solved a subsystem instance using <strong>ParaMagic</strong>. The illustrative model produced a positive communication link margin under its stated assumptions.</p>
+										<div class="research-tags" aria-label="ASDL project methods"><span>MagicDraw</span><span>SysML</span><span>Parametric Modeling</span><span>ParaMagic</span><span>RF Link Budget</span></div>
+										<div class="research-links">
+											<a href="docs/Europa_SysML_Research_Report.pdf" target="_blank" rel="noopener noreferrer" class="button icon solid fa-file-pdf">View Research Report</a>
+											<a href="docs/Europa_SysML_Presentation.pdf" target="_blank" rel="noopener noreferrer" class="button icon solid fa-file-pdf">View Presentation</a>
+											<a href="docs/Europa_SysML_Presentation.pptx" download class="download-slides">Download original slides (.pptx)</a>
+										</div>
+									</article>
 
 								<!-- High-Pressure Experimental Propulsion Laboratory -->
 								<article>
