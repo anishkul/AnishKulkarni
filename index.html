@@ -9,7 +9,9 @@
 		<title>Anish Kulkarni</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Portfolio of Anish Kulkarni, Georgia Tech aerospace engineering student with experience in NASA lunar navigation, propulsion test operations, and model-based systems engineering." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/portfolio.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -21,8 +23,8 @@
 					<div id="intro">
 						<h1>Anish<br />
 						Kulkarni</h1>
-						<p>Aerospace engineering student at Georgia Tech working on cryogenic propulsion testing,<br />
-						guidance navigation and control, and model-based systems engineering.</p>
+						<p>Aerospace engineering student at Georgia Tech working on lunar navigation simulation,<br />
+						cryogenic test operations, and model-based systems engineering.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -54,68 +56,101 @@
 							<article class="post featured">
 								<header class="major">
 									<span class="date">Georgia Tech &bull; B.S. Aerospace Engineering &bull; December 2026</span>
-									<h2><a href="#experience" class="scrolly">Propulsion, GNC, and<br />
-									systems engineering</a></h2>
-									<p>I am an aerospace engineering student at Georgia Tech (GPA 3.35, Hope Scholarship, Dean's List)
-									with hands-on experience in cryogenic propulsion testing, guidance navigation and control,
-									and model-based systems engineering. Relevant coursework spans jet and rocket propulsion,
-									structural analysis, control systems, aerodynamics, spacecraft flight dynamics, and finite element analysis.<br /><br />
-									Core tools: Python, MATLAB, Java, SolidWorks, Siemens NX, SysML (MagicDraw), OpenRocket, and Git.</p>
+									<h2><a href="#experience" class="scrolly">Lunar navigation, propulsion,<br />
+									and systems engineering</a></h2>
+									<p>I'm an aerospace engineering student at Georgia Tech (GPA 3.38; HOPE Scholarship; Dean's List)
+									with experience in NASA Human Landing System lunar navigation simulation, cryogenic rocket-engine test operations,
+									and model-based systems engineering. My coursework includes control systems, jet and rocket propulsion,
+									spacecraft flight dynamics, and spacecraft operations.<br /><br />
+									Core tools: Python, MATLAB, SolidWorks, Siemens NX, SysML / Cameo, OpenRocket, and GitHub.</p>
 								</header>
-								<a href="#experience" class="image main scrolly"><img src="images/Gradpic.jpg" alt="" /></a>
+								<a href="#experience" class="image main scrolly"><img src="images/Gradpic.jpg" alt="Anish Kulkarni on the Georgia Tech campus" /></a>
 								<ul class="actions special">
 									<li><a href="https://www.linkedin.com/in/anish-kulkarni-8ab1131a7/" class="button large">Connect on LinkedIn</a></li>
 								</ul>
 							</article>
 
-						<!-- Posts -->
-							<section class="posts" id="experience">
+						<!-- Experience cards: add new entries inside the section below. -->
+						<section class="posts" id="experience" aria-label="Professional and research experience">
+
+								<!-- NASA HLS Internship -->
 								<article>
 									<header>
-										<span class="date">May 2026 - Present</span>
-										<h2><a href="#">Undergraduate Research Assistant<br />
-										ASDL, MBSE Branch</a></h2>
+										<span class="date">August 2026 - December 2026</span>
+										<h2>NASA OSTEM Intern<br />
+										Human Landing System</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Building MBSE representations in SysML with MagicDraw Modeler to capture system structure, behavior, and requirements for an interdisciplinary lab project. Integrating parametric tools including Siemens NX and ModelCenter to support cross domain trade studies.</p>
+									<div class="experience-media experience-media--logo experience-media--nasa">
+										<img src="images/nasa-logo.png" alt="NASA insignia" loading="lazy" decoding="async" />
+									</div>
+									<p>Supporting lunar Terrain Relative Navigation (TRN) testing at NASA Marshall Space Flight Center by integrating Unreal Engine camera imagery with a 6-DoF guidance, navigation, and control simulation. Incorporating lunar elevation and albedo maps, developing camera-model fidelity including radial lens distortion, and supporting Linux and parallel simulation for Monte Carlo comparisons of TRN algorithms.</p>
 								</article>
+
+								<!-- Georgia Tech ASDL -->
 								<article>
 									<header>
-										<span class="date">July 2025 - Present</span>
-										<h2><a href="#">Cryogenic Test Operations<br />
-										HPEPL, Georgia Tech</a></h2>
+										<span class="date">May 2026 - August 2026</span>
+										<h2>Undergraduate Research Assistant<br />
+										ASDL, MBSE Branch</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Maintain thermal and pressure stability of a cryogenic propulsion test chamber during overnight rocket engine testing by regulating LN2 dewar pressure, fill level, and venting. Execute formal cryogenic test procedures and safety protocols, monitor real-time telemetry across subsystems, and escalate off-nominal conditions to test campaign points of contact.</p>
+									<div class="experience-media experience-media--logo experience-media--asdl">
+										<img src="images/asdl-logo.png" alt="Aerospace Systems Design Laboratory ASDL logo" loading="lazy" decoding="async" />
+									</div>
+									<p>Developed SysML models in Cameo to define system structure, behavior, and requirements as part of the Aerospace Systems Design Laboratory's model-based systems engineering work. Integrated the Siemens NX parametric tool to support cross-domain trade studies.</p>
 								</article>
+
+								<!-- High-Pressure Experimental Propulsion Laboratory -->
+								<article>
+									<header>
+										<span class="date">July 2025 - December 2025</span>
+										<h2>Cryogenic Test Operations<br />
+										HPEPL, Georgia Tech</h2>
+									</header>
+									<figure class="experience-media experience-media--facility">
+										<img src="images/hpepl-vacuum-test-facility.jpg" alt="Large vacuum test facility chamber with observation ports and test support equipment" loading="lazy" decoding="async" />
+									</figure>
+									<p>Regulated liquid nitrogen pressure, fill level, and venting to maintain cryogenic test chamber stability during overnight rocket-engine operations. Followed formal cryogenic test procedures and safety protocols, monitored real-time subsystem telemetry, and escalated off-nominal conditions to test campaign leads.</p>
+								</article>
+
+								<!-- NASA L'SPACE MCA -->
 								<article>
 									<header>
 										<span class="date">January 2026 - May 2026</span>
-										<h2><a href="#">Lead Systems Engineer<br />
-										NASA L'SPACE Mission Concept Academy</a></h2>
+										<h2>Lead Systems Engineer<br />
+										NASA L'SPACE MCA</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Developed a preliminary space mission concept following the NASA mission life cycle in a 15-week, industry-led program. Led an interdisciplinary team, conducted subsystem trade studies, and produced spacecraft configurations using Siemens NX and JMARS planetary data analysis.</p>
+									<div class="experience-media experience-media--logo experience-media--lspace">
+										<img src="images/lspace-logo.png" alt="NASA L'SPACE Academy logo" loading="lazy" decoding="async" />
+									</div>
+									<p>Developed a preliminary mission concept in the 15-week Mission Concept Academy, following NASA mission life-cycle practices. Led systems engineering work, conducted subsystem trade studies, and developed spacecraft configurations using Siemens NX and planetary data analysis with JMARS.</p>
 								</article>
+
+								<!-- NASA L'SPACE NPWEE -->
 								<article>
 									<header>
 										<span class="date">August 2025 - Present</span>
-										<h2><a href="#">Proposal Writing and Evaluation<br />
-										NASA L'SPACE NPWEE</a></h2>
+										<h2>Proposal Writing &amp; Evaluation<br />
+										NASA L'SPACE NPWEE</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Selected for NASA's national proposal development and peer-review academy sponsored by Marshall Space Flight Center. Co-authored an award-winning proposal selected for $10,000 in continuation funding, now continuing through a year-long effort, and trained in proposal evaluation using NASA solicitation review criteria.</p>
+									<div class="experience-media experience-media--logo experience-media--lspace">
+										<img src="images/lspace-logo.png" alt="NASA L'SPACE Academy logo" loading="lazy" decoding="async" />
+									</div>
+									<p>Selected for NASA's national proposal development and evaluation academy sponsored by Marshall Space Flight Center. Co-authored an award-winning proposal selected for $10,000 in continuation funding, continued project development, and trained in evaluating proposals against NASA solicitation review criteria.</p>
 								</article>
+
+								<!-- Ramblin' Rocket Club: text treatment until an authentic photo is available. -->
 								<article>
 									<header>
 										<span class="date">August 2025 - December 2025</span>
-										<h2><a href="#">GNC Team<br />
-										Ramblin' Rocket Club</a></h2>
+										<h2>Guidance, Navigation &amp; Control<br />
+										Ramblin' Rocket Club</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Updated the GNCSIM to use a calibrated actuator model and validated closed-loop step responses and limit cycle behavior against static fire data. Implemented the actuator model in flight software with deflection and rate clamps plus unit and latency checks, verifying command tracking in HIL and SIL tests.</p>
+									<div class="experience-media experience-media--rrc" aria-label="GNC flight software and simulation">
+										<div class="rrc-visual"><span class="icon solid fa-rocket" aria-hidden="true"></span><strong>GNC</strong><span>FLIGHT SOFTWARE &bull; SIMULATION</span></div>
+									</div>
+									<p>Updated GNCSIM with a calibrated actuator model and validated closed-loop response against static-fire data. Implemented actuator modeling in flight software with deflection and rate limits, verifying hardware-in-the-loop and software-in-the-loop command tracking.</p>
 								</article>
-							</section>
+						</section>
 
 					</div>
 
