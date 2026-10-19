@@ -72,18 +72,65 @@
 
 						<!-- Experience cards: add new entries inside the section below. -->
 						<section class="posts" id="experience" aria-label="Professional and research experience">
-
 								<!-- NASA HLS Internship -->
 								<article>
 									<header>
 										<span class="date">August 2026 - December 2026</span>
-										<h2>NASA OSTEM Intern<br />
-										Human Landing System</h2>
+										<h2>NASA OSTEM Intern<br />Human Landing System</h2>
 									</header>
 									<div class="experience-media experience-media--logo experience-media--nasa">
 										<img src="images/nasa-logo.png" alt="NASA insignia" loading="lazy" decoding="async" />
 									</div>
-									<p>Supporting lunar Terrain Relative Navigation (TRN) testing at NASA Marshall Space Flight Center by integrating Unreal Engine camera imagery with a 6-DoF guidance, navigation, and control simulation. Incorporating lunar elevation and albedo maps, developing camera-model fidelity including radial lens distortion, and supporting Linux and parallel simulation for Monte Carlo comparisons of TRN algorithms.</p>
+									<p>At NASA Marshall Space Flight Center, I'm contributing to lunar Terrain Relative Navigation (TRN) simulation for the Human Landing System. My work focuses on realistic camera imagery, lunar terrain and lighting models, and simulation workflows that support guidance and navigation testing.</p>
+
+									<!-- Accessible click-to-expand project and skills buttons. No JavaScript required. -->
+									<h3 class="nasa-topics-heading">Projects &amp; Technical Skills</h3>
+									<p class="nasa-topics-intro">Explore my current technical focus areas:</p>
+									<div class="nasa-topics">
+										<details class="nasa-topic">
+											<summary>Simulation Integration</summary>
+											<div class="nasa-topic-content">
+												<p>Integrating Unreal Engine imagery with a six-degree-of-freedom (6-DoF) guidance, navigation, and control simulation. This work involves co-simulation, debugging, image-quality checks, and verification of simulation behavior.</p>
+											</div>
+										</details>
+
+										<details class="nasa-topic">
+											<summary>Lunar Terrain &amp; Lighting</summary>
+											<div class="nasa-topic-content">
+												<p>Working with lunar digital elevation models (DEMs) and albedo data to improve simulated terrain and surface reflectance. Key skills include terrain visualization, material and lighting workflows, and validation of rendered scenes.</p>
+											</div>
+										</details>
+
+										<details class="nasa-topic">
+											<summary>Camera &amp; Image Modeling</summary>
+											<div class="nasa-topic-content">
+												<p>Developing higher-fidelity synthetic camera imagery by accounting for general optical effects such as lens distortion. My focus includes camera modeling, image verification, and identifying differences between idealized and more realistic imagery.</p>
+											</div>
+										</details>
+
+										<details class="nasa-topic">
+											<summary>Simulation &amp; Monte Carlo Testing</summary>
+											<div class="nasa-topic-content">
+												<p>Supporting Linux-based and parallel simulation workflows to make navigation testing more scalable and repeatable. This involves cross-platform development, troubleshooting, and Monte Carlo simulation concepts for evaluating system behavior.</p>
+											</div>
+										</details>
+
+										<details class="nasa-topic nasa-topic--skills">
+											<summary>Tools &amp; Skills</summary>
+											<div class="nasa-topic-content">
+												<ul class="nasa-skill-list">
+													<li>Unreal Engine</li>
+													<li>6-DoF / GNC Simulation</li>
+													<li>MATLAB / Simulink</li>
+													<li>Linux</li>
+													<li>Lunar DEMs &amp; Albedo</li>
+													<li>Camera Modeling</li>
+													<li>Debugging &amp; Verification</li>
+													<li>Monte Carlo Methods</li>
+												</ul>
+											</div>
+										</details>
+									</div>
 								</article>
 
 								<!-- Georgia Tech ASDL -->
@@ -137,16 +184,14 @@
 									</div>
 									<p>Selected for NASA's national proposal development and evaluation academy sponsored by Marshall Space Flight Center. Co-authored an award-winning proposal selected for $10,000 in continuation funding, continued project development, and trained in evaluating proposals against NASA solicitation review criteria.</p>
 								</article>
-
-								<!-- Ramblin' Rocket Club: text treatment until an authentic photo is available. -->
+								<!-- Ramblin' Rocket Club -->
 								<article>
 									<header>
 										<span class="date">August 2025 - December 2025</span>
-										<h2>Guidance, Navigation &amp; Control<br />
-										Ramblin' Rocket Club</h2>
+										<h2>Guidance, Navigation &amp; Control<br />Ramblin' Rocket Club</h2>
 									</header>
-									<div class="experience-media experience-media--rrc" aria-label="GNC flight software and simulation">
-										<div class="rrc-visual"><span class="icon solid fa-rocket" aria-hidden="true"></span><strong>GNC</strong><span>FLIGHT SOFTWARE &bull; SIMULATION</span></div>
+									<div class="experience-media experience-media--logo experience-media--rrc-logo">
+										<img src="images/rrc-logo.png" alt="Georgia Tech Ramblin' Rocket Club logo" loading="lazy" decoding="async" />
 									</div>
 									<p>Updated GNCSIM with a calibrated actuator model and validated closed-loop response against static-fire data. Implemented actuator modeling in flight software with deflection and rate limits, verifying hardware-in-the-loop and software-in-the-loop command tracking.</p>
 								</article>
